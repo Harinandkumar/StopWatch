@@ -1,0 +1,144 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #343a40;
+}
+
+#container {
+  padding: 40px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #ebe8e5;
+  background: rgba(217, 48, 186, 0.129);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.digit {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.txt {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#btn-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn {
+  padding: 7px 25px;
+  font-size: 15px;
+  margin: 0px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#start {
+  background-color: #1abc9c;
+}
+
+#stop {
+  background-color: #3498db;
+}
+
+#reset {
+  background-color: #e74c3c;
+}
+
+.card {
+  width: 190px;
+  height: 254px;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.card2 {
+  display: flex;
+  width: 190px;
+  height: 254px;
+  background-color: #1a1a1a;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+}
+
+@media (min-width: 768px) {
+  #container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #ebe8e5;
+    background: rgba(217, 48, 186, 0.127);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .digit {
+    font-size: 100px;
+    font-weight: bold;
+  }
+
+  .txt {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .btn {
+    padding: 10px 30px;
+    font-size: 18px;
+  }
+
+  #btn-container {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .digit {
+    font-size: 20px;
+  }
+
+  .txt {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+
+  #btn-container {
+    margin-top: 30px;
+  }
+}
